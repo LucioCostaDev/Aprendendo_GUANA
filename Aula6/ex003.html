@@ -21,7 +21,47 @@
     <h1>Olá mundo!</h1> <!-- Comentario em html-->
     <p>Não tem mais maldição</p>
     <script>
-        var n1 = window.prompt ('Digite um número: ')
+        /* bloco sem conversão
+        var n1 = window.prompt ('Digite um número: ') // window.prompt só ler variavél do tipo string
+        var n2 = window.prompt ('Digite outro número: ') // window.prompt só ler variavél do tipo string
+        var s = n1 + n2  
+        window.alert('A soma dos valores é ' + s) // concatenação o resultado vai ser a junção dos numeros
+        // (number + number) para adição  
+        // (string + string) para concatenação
+        */
+       // bloco com conversão de numero inteiro
+        var n1 = Number.parseInt (window.prompt ('Digite um número: ')) // com conversão para inteiro
+        var n2 = Number.parseInt (window.prompt ('Digite outro número: ')) // com conversão para inteiro
+        var s = n1 + n2  
+        window.alert('A soma dos valores é ' + s)
+
+        // bloco com conversão de numero real
+        var n1 = Number.parseFloat (window.prompt ('Digite um número: ')) // com conversão para real
+        var n2 = Number.parseFloat (window.prompt ('Digite outro número: ')) // com conversão para real
+        var s = n1 + n2  
+        window.alert('A soma dos valores é ' + s)
+
+        // bloco com conversão no qual o javascript reconhe ambas formtaçoes numericas
+        var n1 = Number (window.prompt ('Digite um número: ')) // com conversão para ambas formataçoes
+        var n2 = Number (window.prompt ('Digite outro número: ')) // com conversão para ambas formatações
+        var s = n1 + n2  
+        window.alert('A soma dos valores é ' + s)
+
+         // bloco com conversão no qual o javascript reconhe ambas formtaçoes numericas + conversão para string
+         var n1 = Number (window.prompt ('Digite um número: ')) // com conversão para ambas formataçoes
+        var n2 = Number (window.prompt ('Digite outro número: ')) // com conversão para ambas formatações
+        var s = n1 + n2  
+        window.alert('A soma dos valores é ' + String(s)) // conversão de string
+
+        // bloco com conversão no qual o javascript reconhe ambas formtaçoes numericas + conversão para string padrão template string - facilidade
+        var n1 = Number (window.prompt ('Digite um número: ')) // com conversão para ambas formataçoes
+        var n2 = Number (window.prompt ('Digite outro número: ')) // com conversão para ambas formatações
+        var s = n1 + n2  
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // (`) utilização da crase e o padrão template string
+
+        s.length // quantos caracteres a string tem
+        s.toUppercase() // converte tudo para maisculo
+        s.toLowerCase() // converte tudo para minusculo
     </script>
 </body>
 </html>
