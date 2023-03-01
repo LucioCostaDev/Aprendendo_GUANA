@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+        }
+        
+        a:visited {
+            /* ao visitar */
+            color: darkred;
+        }
+        
+        a:hover {
+            /* ao passar */
+            color: black;
+            text-align: underline;
+        }
+        
+        a:active {
+            /* ao clicar */
+            color: yellow;
+        }
+
+        a::before {
+            /* antes */
+            content: '⇒ ';
+        }
+
+        a::after{
+            /* depois */
+            content: ' ⇐';
+            /* text-decoration: none;
+            font-weight: normal;
+            color: darkgrey; */
+        }
+
+        .especial {
+            background-color: blue;
+        }
+
+        .especial::before {
+            /* antes */
+            content: ' ✯ ';
+            color: darkgoldenrod;
+            
+        }
+
+        .especial::after{
+            /* depois */
+            content: ' ✯ ';
+            color: darkorange;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <h2>Pseudo classes são palavras que definemm estados de  elementos dentro da HTML</h2>
+    <h2>Pseudos Elementos pode agir nas classes nos elementos nos ids eles mexem no conteudo diretamente periferico</h2>
+    <h2>Seletores Personlizados</h2>
+    <h2> # = id</h2>
+    <h2> . = class</h2>
+    <h2> : = pseudo-class</h2>
+    <h2> :: = pseudo-element</h2>
+    <h2> > = clildrem</h2>
+    <ul>
+     <li> <a href="https://www.youtube.com/" target="_blank">You Tube</a></li>
+     <li> <a href="https://www.twitch.tv/" target="_blank">Twitch</a></li>
+     <li> <a href="https://store.steampowered.com/?l=portuguese" target="_blank">Steam</a></li>
+     <li> <a href="https://www.square-enix.com/" target="_blank "class="especial">SquareSoft</a></li>
+    </ul>
+</body>
+</html>
