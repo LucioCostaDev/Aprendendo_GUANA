@@ -5,6 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grouping tags</title>
+    <style>
+         body{
+            /* corpo */
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+         }
+
+         header {
+            /* cabeçalho */
+            border: black;
+            border-style: dashed;
+            background-color: rgb(103, 202, 226);
+            padding: 10px;
+            margin: 10px;
+            text-align: left;
+         }
+
+         h1 {
+            /* sucede a propiedade do texto-align contido no header que está como exemplo left */
+            border: black;
+            border-style: dashed;
+            text-align: center;
+         }
+
+         nav {
+            /* nav=navegação ou menu: as propriedades contida dentro tem alteração ex.: as anconras <a> ou seja os links */
+            border: black;
+            border-style: dashed;
+            background-color: rgb(220, 230, 231);
+            padding: 3px;
+            text-align: center;
+         }
+
+         nav > a {
+            border: black;
+            border-style: dashed;
+            text-decoration: none;
+            color: rgb(16, 40, 179);
+            font-weight: bold;
+            margin-right: 50px;
+         }
+
+         nav > a:hover {
+            /* efeito as os links caso colocado o ponteiro */
+            text-decoration: underline;
+            background-color: rgb(154, 184, 86);
+         }
+
+         main {
+            /* main = conteudos principal */
+            border: black;
+            border-style: dashed;
+            background-color: rgb(39, 189, 181);
+            padding: 10px;
+            margin: 10px;
+         }
+
+            #assuntos {
+            border: rgb(230, 220, 220);
+            border-style: dashed;
+            background-color: rgb(0, 0, 5);
+            text-align: center;
+            color: rgb(238, 228, 228);
+         }
+
+         article{
+            background-color: rgb(22, 80, 146);
+            padding: 5px;
+         }
+
+         article > aside {
+            border: black;
+            border-style: dashed;
+            background-color: rgb(14, 109, 126);
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+         }
+
+         footer {
+            border: black;
+            border-style: dashed;
+            background-color: rgb(36, 167, 177);
+            color: black;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 1px;
+            margin: 0px;
+         }
+
+    </style>
 </head>
 <body>
     <!-- <div>
@@ -36,7 +127,7 @@
     </header>
     <main>
         <section id="assuntos">
-
+            <p>Esportes e Politicas</p>
         </section>
         <section id="noticias">
             <article>
@@ -48,5 +139,8 @@
             </article>
         </section>
     </main>
+    <footer>
+        <p>Desenvolvimento de Lúcio</p>
+    </footer>
 </body>
 </html>
