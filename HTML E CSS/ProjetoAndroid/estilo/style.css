@@ -2,9 +2,10 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
- @font-face {
+@font-face {
     font-family: 'Android';
-    src: url('/fontes/idroid');
+    src: url('') format('opentype');
+    font-weight: normal;
  }
 
 
