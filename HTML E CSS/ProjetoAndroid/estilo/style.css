@@ -33,6 +33,11 @@ body {
     font-family: var(--fonte-padrao);
 }
 
+a.externo::after {
+    /* uma classe para criar um desenho de um link */
+    content: '\00A0\1F517';
+}
+
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
@@ -57,7 +62,6 @@ header > p {
     padding-left: 10px;
     margin: auto;
     text-shadow: 2px 2px 0px black;
-
 }
 
 nav {
@@ -131,10 +135,11 @@ main a {
     background-color: var(--cor1);
     padding: 2px 6px;
 }
- main a:hover{
+
+main a:hover{
     text-decoration: underline;
     color: var(--cor4);
- }
+}
 
 main img {
     /* devido a pagina responsiva */
@@ -147,10 +152,20 @@ main img.pequena {
     display: block;
     margin: auto;
 }
+
 aside {
     background-color: var(--cor1);
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 3px 3px 8px rgb(37, 36, 36);
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 aside > ul { 
@@ -159,6 +174,7 @@ aside > ul {
     columns: 2;
 
 }
+
 footer {
     background-color: var(--cor5);
     color: white;
