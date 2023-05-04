@@ -8,7 +8,7 @@
     <title>Interação de Eventos com DOM</title>
     <style>
         body {
-            font: normal 18pt Arial
+            font: normal 18pt Arial;
         }
 
         input {
@@ -17,8 +17,6 @@
         }
 
         div#res {
-            font: blue;
-            background: blue;
             margin-top: 20px;
         }
     </style>
@@ -26,8 +24,8 @@
 
 <body>
     <h1>Somando Valores</h1>
-    <input type="number" name="txtn1" id="txt1"> +
-    <input type="number" name="txtn2" id="txt2">
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
     <input type="button" value="Somar" onclick="somar()">
     <div id="res">Resultado</div>
     <script>
@@ -37,7 +35,7 @@
             var res = window.document.getElementById('res')
             var n1 = Number(tn1.value)
             var n1 = Number(tn2.value)
-            var s = n1 + n2
+            var res = tn1 + tn2
             res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
 
         }
