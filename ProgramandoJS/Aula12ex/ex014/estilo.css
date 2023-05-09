@@ -17,6 +17,11 @@ margin: auto;
 box-shadow: 2px 2px 2px 2px rgb(85, 78, 78);
 }
 
+div {
+    text-align: center;
+    padding: 5px;
+}
+
 footer {
     color:black;
     text-align: center;
