@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas HTMLt</title>
+</head>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .tb1 {
+            /* aumenta largura da caixa */
+            width: 400px;
+            /* cria borda */
+            border: 1px solid black;
+            /* borda junta */
+            border-collapse: collapse;
+            /* borda separa */
+            /* border-collapse: separate; */
+        }
+
+        .tb2 {
+            /* espaçamento de cima, para separar da outra tabela*/
+            margin-top: 10px;
+            /* aumenta largura da caixa */
+            width: 400px;
+            /* cria borda */
+            border: 1px solid black;
+            /* borda junta */
+            /* border-collapse: collapse; */
+            /* borda separa */
+            border-collapse: separate;
+        }
+
+        .tb3 {
+            /* espaçamento de cima, para separar da outra tabela*/
+            margin-top: 10px;
+            /* aumenta largura da caixa */
+            width: 400px;
+            /* cria borda */
+            border: 1px solid black;
+            /* borda junta */
+            /* border-collapse: collapse; */
+            /* borda separa */
+            border-collapse: separate;
+            /* espaçamendo das linhas */
+            border-spacing: 10px;
+        }
+
+        .tb1 tr {
+            background-color: rgb(7, 75, 18);
+        }
+
+        .tdb2 {
+            background-color: blue;
+        }
+        .tdd2 {
+            background-color: blue;
+        }
+        .tda3 {
+            background-color: blue;
+        }
+        .tde3 {
+            background-color: blue;
+        }
+        .tdc1 {
+            background-color: blue;
+        }
+        .tde4 {
+            background-color: blue;
+        }
+        .tda4 {
+            background-color: blue;
+        }
+        .tdb5 {
+            background-color: blue;
+        }
+        .tdd5 {
+            background-color: blue;
+        }
+        .tdc6 {
+            background-color: blue;
+        }
+
+        tr {
+            background-color: red;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            /* obs. apenas as linhas que estão separadas */
+            border-radius: 10px;
+        }
+
+    </style>
+
+<body>
+    <h1>TABELA</h1>
+    <!-- 
+        HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabelas
+                    TABELA DATA = dado de tabela 
+     -->
+
+     <table class="tb1"> <!-- tabela cria caixa-->
+        <tr> <!-- Primeira linha-->
+            <td>A1</td> <!-- td = dados -->
+            <td>B1</td>
+            <td class="tdc1">C1</td>
+            <td>D1</td>
+            <td>E1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td class="tdb2">B2</td>
+            <td>C2</td>
+            <td class="tdd2">D2</td>
+            <td>E2</td>
+        </tr>
+        <tr>
+            <td class="tda3">A3</td>
+            <td>B3</td>
+            <td>C3</td>
+            <td>D3</td>
+            <td class="tde3">E3</td>
+        </tr>
+        <tr>
+            <td class="tda4">A4</td>
+            <td>B4</td>
+            <td>C4</td>
+            <td>D4</td>
+            <td class="tde4">E4</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td class="tdb5">B5</td>
+            <td>C5</td>
+            <td class="tdd5">D5</td>
+            <td>E5</td>
+        </tr>
+        <tr>
+            <td>A6</td>
+            <td>B6</td>
+            <td class="tdc6">C6</td>
+            <td>D6</td>
+            <td>E6</td>
+        </tr>
+     </table>
+
+     <table class="tb2">
+        <tr> <!-- Primeira linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4 </td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+     </table>
+
+     <table class="tb3">
+        <tr> <!-- Primeira linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+        teste2 teste4
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+        <!-- obs declarar fora vai pra cima -->
+        teste1
+        teste3
+     </table>
+</body>
+</html>
