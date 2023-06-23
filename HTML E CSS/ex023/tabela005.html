@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando Colunas com colgroup</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .cnome {
+            background-color: gray;
+        }
+
+        .cgrupo {
+             background-color: red;
+        }
+
+        .amarelo {
+            background-color: yellow;
+        }
+
+        .vermelho {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+
+        <colgroup>
+
+            <col class="amarelo">
+            <col class="vermelho">
+            <col class="amarelo">
+            <col class="vermelho">
+
+           <!-- <col class="cnome">
+            <col class="csexo">
+  //SPAN da a possiblidade de marca mais de uma coluna
+            <col class="cgrupo" span="2">
+            <col class="ccidade">
+            <col class="cprof"> -->
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+            <th scope="col">span="2"</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Lúcio</td>
+            <td>M</td>
+            <td>37</td>
+            <td>Programador</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Alinne</td>
+            <td>F</td>
+            <td>34</td>
+            <td>Admistração</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>M</td>
+            <td>10</td>
+            <td>Estudante</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Luciano</td>
+            <td>M</td>
+            <td>37</td>
+            <td>Automoção</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>50</td>
+            <td>Dona de Casa</td>
+            <td></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
