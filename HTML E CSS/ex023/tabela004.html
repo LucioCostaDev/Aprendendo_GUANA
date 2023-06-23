@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MESCLAGEM DE TABELAS</title>
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 500px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+         caption {
+            font-weight: bold;
+         }
+
+        tbody {
+            /* border: 1px solid black; */
+        }
+
+        th, td {
+            border: 1px solid black;
+        }
+
+/* A lógica da mesclagem ou criação da tabela e definida por linhas, que dependendo da situção da informação podem ser alteradas por linhas(colspan="?") ou colunas(rowspan="?"), ou seja sempre informações coloca por linhas */
+
+/* TH conforme solictação 3W2 sempre tem que ter escopo */
+
+/* scope referência a um grupo de linhas ou colunas que definiram a tabela de acordo com o TH ou seja titulo */
+
+    
+    </style>
+</head>
+<body>
+    <table>
+        <caption>FILMES FAVORITOS</caption>
+        <tr>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="3">Filme</th>
+
+        </tr>
+        <tr>
+            <th rowspan="3" scope="3">Mulheres</th>
+            <td>Ana Maria Santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+        <tr>
+            <td>Beatriz Souza</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td>
+        </tr>
+        <tr>
+            <td>Cláucia Melo</td>
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Big Hero</td>
+        </tr>
+        <tr>
+            <th rowspan="3" scope="3">Homens</th>
+            <td>Bruno Mendonça</td>
+            <td>Intocáveis</td>
+            <td>Amnésia</td>
+            <td>Gladiador</td>
+        </tr>
+        <tr>
+            <td>Daniel Lourenço</td>
+            <td>Wall-E</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+        </tr>
+        <tr>
+            <td>Fabiano Mota</td>
+            <td>Star Wars 5</td>
+            <td>Taxi Driver</td>
+            <td>Toy Story</td>
+        </tr>
+        <tr>
+            <th colspan="4" scope="row ">Total</th>
+            <td>1000</td>
+        </tr>
+    </table>
+</body>
+</html>
