@@ -8,8 +8,11 @@
 <body>
     <h1>Meu site principal</h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, sint recusandae eveniet iste perferendis similique magnam possimus necessitatibus, harum excepturi perspiciatis vel aliquid asperiores sit. Ipsum, reprehenderit nesciunt. Quis, aspernatur</p>
-    <!-- Utilizando sandbox="sandbox" possibilita de evitar ataques, não captura mais informação -->
-<iframe src="paginas-extras/page004.html" sandbox="sandbox" referrerpolicy="no-referer-when-downgrade">
+    <!-- Utilizando sandbox="sandbox" com a propriedade referrerpolicy="no-referer" possibilita de evitar ataques, não captura mais informação do usuario -->
+    <!-- o sandbox="sandbox" liga todas as configurações de segurança no maximo  -->
+    <!-- sandbox="allow-same-origin allow-forms allow-script" no caso aqui está autorizando os arquivos por ser na mesma origem-->
+
+<iframe src="paginas-extras/page005.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referer-when-downgrade">
     seu navegador não em compativel com isso....
 </iframe>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, cum? Officiis voluptatum minus doloremque beatae? Assumenda aut voluptates culpa esse perferendis accusantium maxime temporibus animi eaque vero pariatur, magni sunt.</p>
