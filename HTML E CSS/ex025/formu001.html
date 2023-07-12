@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiro formulário</h1>
+    <!-- criação de um formulário e form com atributos
+    action direciona pra alguma linguagem de programação os dados ou seja direciona pra algum servidor -->
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"> 
+</p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
+
+<!-- todo objeto de entrada no (input) precisa de um name e id para ser identificado com label
+Ou seja label cria uma relação -->
+
+<!-- Quando utilizar method GEST E POST
+ Get padrão : utilizado quando dos dados não são sensiveis ou seja não lida com informações importantes e pessoais que possa prejudicar
+outra observação e que caso queira que uma url sejá compartilhada precisa ser utilizado o methodo GET
+e só pode ser enviado no maximo 3mil bites e aproximadamente 3 mil letras -->
+
+<!-- O method POST e utilizado em campos sensiveis como senhas mais não e uma segurança total -->
+
+<!-- HTTPS futuro para aprender a colocar segurança em dados de cartão e dados pessoais  -->
