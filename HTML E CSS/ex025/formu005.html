@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checbox e Raio</title>
+</head>
+<body>
+    <h1>Checkbox e Radio para formulario</h1>
+    <form action="#" method="get" autocomplete="on">
+        <fieldset>
+            <!-- Obs. No caso do type="radio" tem que se usar a mesma referência na propriedade name e com isso vai poder selecionar o resultado de acordo escolhido ou seja num mesmo grupo de informação  -->
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label><br>
+            <!-- e caso queira definir já marcado alguma opção e só add apos id="referência2" ou value="" a propriedade checked-->
+            
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label><br>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esnat" id="iesnat"> Natação<br>
+            <input type="checkbox" name="esten" id="iesten"> Tênis<br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
+
+<!--  Padrão: seleção apenas na caixa
+    <input type="checkbox" name="referência1" id="referência2"> Natação<br>
+
+    Avançado: seleção tanto na caixa com na palavra
+     <input type="checkbox" name="referência1" id="referência2"> <label for="referência2">Basquete</label><br>
+-->
+
+<!-- E possivel tanto no radio como no ckeckbox definir já marcado alguma opção e só add apos id="referência2" a propriedade checked-->
