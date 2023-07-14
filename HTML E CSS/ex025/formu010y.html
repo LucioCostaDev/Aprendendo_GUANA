@@ -7,19 +7,32 @@
 </head>
 <body>
     <h1>Formulario</h1>
-    <p>
-        <label for="iano">Em que ano você nasceu? </label>
-        <input type="number" name="ano" id="iano" min="1900" max="2020" oninput="calcIdade()">
-    </p>
-    <p>
-        <label for="iidade"></label>
-    </p>
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </p>
+<form action="#" method="get" autocomplete="on">
+        <p>
+            <label for="iano">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2020" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="iidade">Sua idade é: </label>
+            <output id="iidade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+</form>
+
+<script>
+    function calcIdade() {
+        // num vai receber o ano completo
+        let num = new Date().getFullYear()
+        iidade.innerHTML = Number(num) - Number(iano.value)
+    }
+</script>
 </body>
 </html>
 
+<!-- Fazer um programa que de exatos dias e os meses de uma idade -->
 <!-- Obs. o output não serve para enviar nada apenas mostrar o resultado na tela -->
 <!-- Foi criado um output para realizar soma, visto que utilizando java script que seria innerHTML como codigo que chama -->
+
