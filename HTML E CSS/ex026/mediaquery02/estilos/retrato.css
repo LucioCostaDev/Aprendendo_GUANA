@@ -1,7 +1,8 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
 /* configurações para retrato em pé */
 
 body {
-    background-color: orange;
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: left bottom;
 }
