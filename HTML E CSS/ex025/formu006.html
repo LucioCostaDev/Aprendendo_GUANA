@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento Color, range e file em HTML</title>
+</head>
+<body>
+    <h1>Elemento Color, range e file em HTML</h1>
+    <form action="#" method="get" autocomplete="on"></form>
+    <p>
+        <label for="icor">Cor: </label>
+        <input type="color" name="cor" id="icor" value="#00ff00">
+    </p>
+    <p>
+        <label for="inivel">Núvel de Sastifação: </label>
+        <input type="range" name="nivel" id="inivel" min="1" max="5" value="1">
+        <!-- min=1 um por um, max=5 e maximo, value=1 de 1 a 1 -->
+    </p>
+    <p>
+        <label for="ifoto">Foto do perfil: </label>
+        <input type="file" name="foto" id="ifoto">
+        <!-- obs. a foto e um arquivo grande por esse motivo dependendo da situação o method de envio pode ser que tenha que ser mudado de GET para POST -->
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
+
+<!-- Obs. alguns navegadores não são compativeis com alguns input -->
