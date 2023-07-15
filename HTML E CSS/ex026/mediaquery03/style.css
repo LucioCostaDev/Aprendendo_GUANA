@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-/* declaração geral */
- 
+/* declaração geral pode ser usado nesse formato ou sem o média */
+@media all{
 * {
     margin: 0px;
     padding: 0px;
@@ -34,6 +34,7 @@
            background-position: center bottom;
        }
    }
+}
 
    /* declarações paisagem */
    @media screen and (orientation: landscape) {
