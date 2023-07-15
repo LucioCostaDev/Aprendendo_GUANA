@@ -4,54 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-   <!-- declarações gerais -->
-<style>
-    
-    * {
-     margin: 0px;
-     padding: 0px;
-     font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    html, body {
-     /* largura total da tela */
-     width: 100vw;
-     /* tamanho total da tela */
-     height: 100vh;
-     /* cor do fudo */
-     background-color: rgb(21, 55, 253);
-     background-size: contain;
-     background-repeat: no-repeat;
-    }
-    
-    h1, h2 {
-     /* cor do h1 */
-     color: white;
-     /* colocar sobra no texto */
-     text-shadow: 3px 3px 0px black;
-     padding: 10px;
-    }
-
-    /* declarações retrato */
-    @media screen and (orientation: portrait) {
-        body {
-            background-image: url(../imagens/cev-portrait.jpg);
-            background-position: center bottom;
-        }
-    }
-
-    /* declarações paisagem */
-    @media screen and (orientation: landscape) {
-        body {
-            background-image: url(../imagens/cev-landscape.jpg);
-            background-position: left bottom;
-        }
-    }
-</style>
-
+    <!-- media aqui e para todos os tipos de midias -->
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <!-- apenas dispositivos em pe -->
+    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
+    <!-- apenas para orientação paisagem -->
+    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
 </head>
 <body>
     <h1>Mude a orientação do seu dispositivo</h1>
-    
+    <h2>Tela em pe ou deitado?</h2>
 </body>
 </html>
