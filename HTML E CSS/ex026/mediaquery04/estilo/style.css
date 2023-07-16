@@ -4,20 +4,21 @@
 
 /* configurar para tela celular */
 
+/* configuração geral da página */
 * {
     /* fonte da pagina */
     font-family: Arial, Helvetica, sans-serif;
     /* tamanho da fonte */
-    font-size: 1.3em;
+    font-size: 1em;
     /* espaçamento externo */
     margin: 0px;
     /* espaçamento interno */
     padding: 0px;
-    /* tipo de caixa */
-    box-sizing: border-box;
+    /* box-sizing: border-box, há alteração no cálculo padrão que conhecemos, fazendo com que o navegador passe a considerar a altura e largura do elemento contando o ´padding´ e o ´border´ do elemento. obs. preenche*/
+    box-sizing: border-box; 
 }
 
-body, html {
+html {
     /* toda largura da tela */
     /* width: 100vw; */
     /* toda altura da tela */
@@ -25,34 +26,49 @@ body, html {
 }
 
 body {
-    background: black url(../imagens/back-phone.jpg) no-repeat;
+    /* coloca imagem de fundo */
+    background: black url(../imagens/back-phone.jpg) ;
+    /* ajusta a imagem com conteudo completo */
     background-size: cover;
+    /* posicionamento da imagem */
     background-position: center center;
 }
 
 main {
-    background-color: lightgray;
-    width: 90vw;
+    /* adiciona uma caixa ao fundo da imagem */
+    background-color: rgba(214, 199, 199, 0.445);
+    /* tamanho da caixa */
+    width: 50vw;
+    /* espaçamento: centraliza */
     margin: auto;
-    margin-top: 20px;
+    /* espaçamento da caixa na parte de cima */
+    margin-top: 10px;
+    /* deixa a caixa com borda redondada */
     border-radius: 10px;
+    /* espaçamento aumenta o tamanho da caixa */
     padding: 10px;
 }
 
 h1 {
+    /* alinhamento do texto */
     text-align: center;
+    /* cor do texto */
     color: white;
+    /* tamanho da fonte */
     font-size: 2em;
+    /* sombra nos texto */
     text-shadow: 2px 2px 2px black;
 }
 
 img  {
+    /* A declaração display: block faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são. Um bloco contém um espaço em branco tanto em cima como embaixo e não permite outros elementos HTML ao lado, exceto quando tiver sido declarado ao contrário (por exemplo, declarar a propriedade float para o elemento próximo ao bloco). */
     display: block;
+    /* o browser dará uma margem automática para todos os lados.  */
     margin: auto;
 }
 
+img#print {display: none;}
 img#phone {display: block;}
 img#tablet {display: none;}
-img#print {display: none;}
 img#pc {display: none;}
 img#tv {display: none;}
