@@ -24,4 +24,9 @@ Grandes telas: acima de 1200px
     menu > ul > li {
         display: inline-block;
     }
+    
+    /* criação para que o conteudo fique com uma largura fixa  */
+    main {
+        width: 768px;
+    }
 }
