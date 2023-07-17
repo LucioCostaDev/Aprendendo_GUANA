@@ -67,6 +67,7 @@ img  {
     margin: auto;
 }
 
+/* Criação de classes  */
 img#print {display: none;}
 img#phone {display: block;}
 img#tablet {display: none;}

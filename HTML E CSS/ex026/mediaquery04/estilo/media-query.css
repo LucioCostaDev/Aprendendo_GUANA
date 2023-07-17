@@ -21,11 +21,14 @@ Grandes telas: acima de 1200px
     }
 
     main {
-        border: 2px 2px 2px black;
+        /* criação de uma caixa preta */
+        width: 90vw;
+        border: 2px solid black;
     }
 
     main::after {
         content: 'Essa imprenssão foi feita através do site';
+        text-decoration: overline;
     }
 
     main h1 {
